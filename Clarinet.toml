@@ -1,0 +1,24 @@
+[project]
+name = 'Emergency-Medical-Services-Response-Optimization-Platform'
+description = ''
+authors = []
+telemetry = true
+cache_dir = './.cache'
+requirements = []
+[contracts.equipment-inventory]
+path = 'contracts/equipment-inventory.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.hospital-capacity]
+path = 'contracts/hospital-capacity.clar'
+clarity_version = 2
+epoch = 2.5
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
